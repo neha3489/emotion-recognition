@@ -1,0 +1,30 @@
+# Virtual envs
+.venv/
+.venv-1/
+.venv-2/
+.venv311/
+
+# Dataset (too large for GitHub)
+emotion_dataset/
+emotion_dataset.zip
+
+# Old outputs
+outputs_v3/
+outputs_v5/
+
+# Misc training files
+testing_gpu.py
+train_emotion_model.ipynb
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# VSCode
+.vscode/
