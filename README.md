@@ -2,13 +2,13 @@
 
 Real-time facial emotion recognition using ResNet18 transfer learning, deployed as an interactive web app.
 
-**Live Demo:** []
+**Live Demo:** [ ]
 
 ---
 
 ## Demo
 
->
+> 
 
 ---
 
@@ -85,8 +85,13 @@ emotion-recognition/
 # Note: emotion_model_v5.pth is hosted on Hugging Face Spaces
 # (43MB — too large for GitHub)
 ```
-Run locally
-bashgit clone https://github.com/YOUR-USERNAME/emotion-recognition
+
+---
+
+## Run locally
+
+```bash
+git clone https://github.com/YOUR-USERNAME/emotion-recognition
 cd emotion-recognition
 
 python -m venv .venv
@@ -97,6 +102,7 @@ pip install -r requirements.txt
 # Then run:
 python app.py
 # Opens at http://localhost:7860
+```
 
 ---
 
@@ -115,6 +121,6 @@ Python · PyTorch · ResNet18 · MediaPipe · Gradio · OpenCV · scikit-learn �
 
 ---
 
-## key points
+## Key Points
 
 > Fine-tuned ResNet18 on FER-2013 (28K images, 6 classes) using two-phase transfer learning with Mixup augmentation and OneCycleLR, achieving **65.93% test accuracy** (vs 16.7% random baseline and 49% original model); replaced Haar Cascade with MediaPipe for robust real-time face detection; deployed as a live Gradio web app with webcam inference and interview practice mode.
