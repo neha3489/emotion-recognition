@@ -85,7 +85,18 @@ emotion-recognition/
 # Note: emotion_model_v5.pth is hosted on Hugging Face Spaces
 # (43MB — too large for GitHub)
 ```
+Run locally
+bashgit clone https://github.com/YOUR-USERNAME/emotion-recognition
+cd emotion-recognition
 
+python -m venv .venv
+.venv\Scripts\activate          # Windows
+pip install -r requirements.txt
+
+# Download emotion_model_v5.pth from HF Spaces and place in the root folder
+# Then run:
+python app.py
+# Opens at http://localhost:7860
 
 ---
 
