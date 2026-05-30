@@ -2,13 +2,13 @@
 
 Real-time facial emotion recognition using ResNet18 transfer learning, deployed as an interactive web app.
 
-**Live Demo:** [Add your HF Spaces link here after deploying]
+**Live Demo:** []
 
 ---
 
 ## Demo
 
-> Record a 30-second screen capture of the app and add the GIF here
+>
 
 ---
 
@@ -68,7 +68,7 @@ GlobalAvgPool → FC(512→256) → ReLU → Dropout(0.5) → FC(256→6)
 
 ## Dataset
 
-FER-2013 from Kaggle — 28,273 training / 7,067 test images, 48×48 grayscale (resized to 64×64 RGB).  
+FER-2013 from Kaggle — 28,273 training / 7,067 test images, 48×48 grayscale (resized to 64×64 RGB).
 6 classes used (disgust excluded — only ~500 samples vs 8,000+ for happy).
 
 ---
@@ -77,28 +77,15 @@ FER-2013 from Kaggle — 28,273 training / 7,067 test images, 48×48 grayscale (
 
 ```
 emotion-recognition/
-├── app.py                      # Gradio web app
-├── FED_train_v5.py             # Training script (PyTorch)
-├── requirements.txt            # Dependencies
-├── emotion_model_v5.pth        # Trained model weights (~43 MB)
+├── app.py                        # Gradio web app
+├── fed_train_resnet18_improved.py # Training script (PyTorch)
+├── requirements.txt              # Dependencies
 └── README.md
+
+# Note: emotion_model_v5.pth is hosted on Hugging Face Spaces
+# (43MB — too large for GitHub)
 ```
 
----
-
-## Run locally
-
-```bash
-git clone https://github.com/YOUR-USERNAME/emotion-recognition
-cd emotion-recognition
-
-python -m venv .venv
-.venv\Scripts\activate        # Windows
-pip install -r requirements.txt
-
-python app.py
-# Opens at http://localhost:7860
-```
 
 ---
 
@@ -117,6 +104,6 @@ Python · PyTorch · ResNet18 · MediaPipe · Gradio · OpenCV · scikit-learn �
 
 ---
 
-## Resume bullet
+## key points
 
 > Fine-tuned ResNet18 on FER-2013 (28K images, 6 classes) using two-phase transfer learning with Mixup augmentation and OneCycleLR, achieving **65.93% test accuracy** (vs 16.7% random baseline and 49% original model); replaced Haar Cascade with MediaPipe for robust real-time face detection; deployed as a live Gradio web app with webcam inference and interview practice mode.
