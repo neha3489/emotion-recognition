@@ -117,7 +117,7 @@ python app.py
 
 ## Tech stack
 
-Python · PyTorch · ResNet18 · MediaPipe · Gradio · OpenCV · scikit-learn · NumPy
+Python · PyTorch · ResNet18 · Gradio · OpenCV · scikit-learn · NumPy · HuggingFace
 
 ---
 
